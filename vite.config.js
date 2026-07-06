@@ -47,7 +47,7 @@ export default defineConfig(
                 {
                     partialDirectory: resolve(__dirname, 'src/partials'),
                     context: (page) => {
-                       /*console.log(`Cargando contexto de: ${page}`);*/
+                       console.log(`Cargando contexto de: ${page}`);
                         let context = getPageContext(page);
                         console.log(JSON.stringify(context,null, 2));
                         return context;
