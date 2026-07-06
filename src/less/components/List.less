@@ -1,0 +1,49 @@
+.cv-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: @tertiary-background-color;
+        margin-top: 0.75rem;
+        margin-bottom: 0.25rem;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid @primary-background-color;
+        padding: 0.25rem 0;
+        font-size: 1rem;
+        background: transparent;
+        color: inherit;
+        font-family: inherit;
+
+        &:focus {
+            outline: none;
+            border-bottom-color: @border-color;
+        }
+    }
+}
+
+.cv-hab {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        position: relative;
+        padding-left: 1.25rem;
+        margin-bottom: 0.6rem;
+        line-height: 1.5;
+
+        &::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: @border-color;
+        }
+    }
+}

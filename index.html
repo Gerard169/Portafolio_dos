@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/less/style.less" />
+  <title>Portafolio</title>
+</head>
+
+<body>
+  {{>header}}
+  <main>
+    <section class="carrucel">
+      <div class="carrucel-track">
+        <div class="carrucel-item">
+          <picture>
+            <source srcset="https://picsum.photos/id/60/1300/750" media="(min-width:1025px)" />
+            <source srcset="https://picsum.photos/id/60/1024/620" media="(min-width:720px)" />
+            <img src="https://picsum.photos/id/60/640/800" alt="Imagen-carrucel" class="img_ajuste" />
+          </picture>
+        </div>
+        <div class="carrucel-item">
+          <picture>
+            <source srcset="https://picsum.photos/id/100/1300/750" media="(min-width:1025px)" />
+            <source srcset="https://picsum.photos/id/100/1024/620" media="(min-width:720px)" />
+            <img src="https://picsum.photos/id/100/640/800" alt="Imagen-carrucel 2" class="img_ajuste" />
+          </picture>
+        </div>
+        <div class="carrucel-item">
+          <picture>
+            <source srcset="https://picsum.photos/id/110/1300/750" media="(min-width:1025px)" />
+            <source srcset="https://picsum.photos/id/110/1024/620" media="(min-width:720px)" />
+            <img src="https://picsum.photos/id/110/640/800" alt="Imagen-carrucel 3" class="img_ajuste" />
+          </picture>
+        </div>
+        <div class="carrucel-item">
+          <picture>
+            <source srcset="https://picsum.photos/id/120/1300/750" media="(min-width:1025px)" />
+            <source srcset="https://picsum.photos/id/120/1024/620" media="(min-width:720px)" />
+            <img src="https://picsum.photos/id/120/640/800" alt="Imagen-carrucel 4" class="img_ajuste" />
+          </picture>
+        </div>
+      </div>
+      <div class="action-panel">
+        <Strong>Carta de vida</Strong>
+        <h3>Aspectos importantes de mi perfil</h3>
+      </div>
+    </section>
+    <h2>Datos Profesionales</h2>
+    <section class="grid">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          {{>Listholder card-data-set=lista}}
+        </div>
+        <div class="col-12 col-md-6">
+          <picture>
+            <source srcset="https://picsum.photos/id/289/1600/750" media="(min-width:1025px)" />
+            <source srcset="https://picsum.photos/id/289/740/640" media="(min-width:700px)"/>
+            <img src="https://picsum.photos/id/289/400/400" alt="Half Image" class="cover-img" />
+          </picture>
+        </div>
+      </div>
+    </section>
+       {{>cardholder card-data-set=planes}}
+    {{>carrucel}} <!--script carrucel-->
+  </main>
+  {{>footer}}
+</body>
+
+</html>
